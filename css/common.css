@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Montserrat:wght@200&family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --col1: #2ec1ac;
+    --col2: #279e8c;
+}
+.h-font{
+    font-family: 'Merienda', cursive;
+}
+/*remove arrows/spinner */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+/*input[type=number] { -moz-appearance: textfield; }*/
+.custom-bg{
+    background-color: var(--col1);
+}
+.custom-bg:hover{
+    background-color: var(--col2);
+}
+.h-line{
+    width: 150px;
+    margin: 0 auto;
+    height: 1.7px;
+}
+
+
+/*-------------*/
+.custom-alert{
+    position: fixed;
+    top: 80px;
+    right: 25px;
+    z-index: 11;
+}
+.availability-form{
+    margin-top: -50px;
+    z-index: 2;
+    position: relative;
+}
+div.login-form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+}
+#dashboard-menu {
+    position: fixed;
+    height: 100%;
+    z-index: 11;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: #f1f1f1
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #555
+}
+::-webkit-scrollbar-track{
+    background: #888;
+}
+
+@media screen and (max-width: 991px){
+    #dashboard-menu{
+        height: auto;
+        width: 100%;
+    }
+    #main-content{
+        margin-top: 60px;
+    }
+    
+}
+@media screen and (max-width: 575px) {
+    .availability-form{
+        margin-top: 25px;
+       padding: 0 35px;
+    }  
+}
